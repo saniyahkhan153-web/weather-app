@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+
+        <!-- City & Country -->
+        <h1 id="city-name">Karachi</h1>
+        <h3 id="country-name">Pakistan</h3>
+
+        <!-- Weather Icon -->
+        <img
+            id="weather-icon"
+            class="weather-icon"
+            src="https://openweathermap.org/img/wn/01d@4x.png"
+            alt="Weather Icon"
+        >
+
+        <!-- Temperature -->
+        <h2 class="temperature" id="temp">32°C</h2>
+
+        <!-- Weather Condition -->
+        <p class="condition" id="weather">Sunny</p>
+
+        <!-- Weather Details -->
+        <div class="weather-info">
+
+            <div class="info-row">
+                <span>
+                    <i class="fa-solid fa-droplet"></i>
+                    Humidity
+                </span>
+
+                <span id="humidity">60%</span>
+            </div>
+
+            <div class="info-row">
+                <span>
+                    <i class="fa-solid fa-wind"></i>
+                    Wind
+                </span>
+
+                <span id="wind">12 km/h</span>
+            </div>
+
+            <div class="info-row">
+                <span>
+                    <i class="fa-solid fa-gauge-high"></i>
+                    Pressure
+                </span>
+
+                <span id="pressure">1008 hPa</span>
+            </div>
+
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search city..."
+            >
+
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
